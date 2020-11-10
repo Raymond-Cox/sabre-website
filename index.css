@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--medium-text);
+}
+
+:root {
+  --primary: rgba(18, 18, 18, 1);
+  --alt: rgba(18, 18, 18, 0.92);
+  --high-text: rgba(255, 255, 255, 0.87);
+  --medium-text: rgba(255, 255, 255, 0.6);
+  --low-text: rgba(255, 255, 255, 0.38);
+}
+
