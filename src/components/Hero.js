@@ -1,16 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
+import { FaDiscord } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 export default function Hero() {
   return (
     <CenteredHeader>
       <BoldText>Meet Sabre</BoldText>
-      <SubText>
-        Elevate your live-streaming Discord community to the next level
-      </SubText>
+      <SubText>The bot built for streaming communities</SubText>
       <ButtonContainer>
-        <Button text={"Add to Discord"} />
+        <Button
+          text={"Add to Discord"}
+          icon={
+            <IconContext.Provider value={{ size: "1.5em" }}>
+              <FaDiscord />
+            </IconContext.Provider>
+          }
+        />
         <Button primary={false} text={"See Features"} />
       </ButtonContainer>
     </CenteredHeader>
@@ -23,6 +30,7 @@ const CenteredHeader = styled.div`
   width: 80%;
   justify-content: center;
   text-align: center;
+  min-height: 50vh;
 `;
 
 const BoldText = styled.p`
@@ -41,5 +49,6 @@ const ButtonContainer = styled.div`
 
   @media (min-width: 768px) {
     flex-direction: row;
+    justify-content: center;
   }
 `;

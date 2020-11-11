@@ -31,9 +31,11 @@ class App extends Component {
 }
 
 const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 100%;
   background-color: var(--alt);
 `;
 var mountNode = document.getElementById("app");

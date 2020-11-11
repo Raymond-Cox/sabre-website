@@ -24,6 +24,7 @@ const NavContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  max-width: 100%;
   padding: 0 10px;
   box-shadow: 1px 1px 10px var(--alt);
   background-color: var(--primary);
@@ -33,8 +34,7 @@ const ListContainer = styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
-//   border: 1px solid blue;
-
+  
   a {
     color: var(--medium-text);
     text-decoration: none;
