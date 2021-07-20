@@ -13,6 +13,7 @@ class App extends Component {
       <Router forceRefresh={false}>
         <Container>
           <Nav />
+
           <Switch>
             <Route path="/commands">
               <Commands />
@@ -24,6 +25,7 @@ class App extends Component {
               <Home />
             </Route>
           </Switch>
+
         </Container>
       </Router>
     );

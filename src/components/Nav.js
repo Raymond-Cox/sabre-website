@@ -4,19 +4,19 @@ import styled from "styled-components";
 
 export default function Nav() {
   return (
-    <NavContainer>
-      <ListContainer>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/setup">Setup Guide</Link>
-        </li>
-        <li>
-          <Link to="/commands">Command List</Link>
-        </li>
-      </ListContainer>
-    </NavContainer>
+      <NavContainer>
+        <ListContainer>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/setup">Setup Guide</Link>
+          </li>
+          <li>
+            <Link to="/commands">Command List</Link>
+          </li>
+        </ListContainer>
+      </NavContainer>
   );
 }
 
@@ -34,13 +34,13 @@ const ListContainer = styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  
+
   a {
     color: var(--medium-text);
     text-decoration: none;
     margin: 0 10px;
     padding: 10px;
-    transition: color .3s;
+    transition: color 0.3s;
 
     :hover {
       color: var(--high-text);
